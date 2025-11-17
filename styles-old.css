@@ -1,0 +1,175 @@
+/* King's Cross from Below - Main Page Styles */
+
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #c0392b;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --light-bg: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+
+.editors, .publisher {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.25rem 0;
+}
+
+main {
+    margin-bottom: 3rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.toc-section {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent-color);
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.toc li strong {
+    color: var(--primary-color);
+}
+
+.toc a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.toc a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.sub-chapters {
+    list-style-type: none;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.sub-chapters li {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    border-top: 2px solid var(--border-color);
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Print styles */
+@media print {
+    body {
+        max-width: 100%;
+        font-size: 12pt;
+    }
+    
+    .toc a::after {
+        content: " [" attr(href) "]";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .sub-chapters {
+        padding-left: 1rem;
+    }
+}

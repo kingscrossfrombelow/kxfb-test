@@ -3,33 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction - King's Cross from Below</title>
-    <link rel="stylesheet" href="../../chapter-styles.css">
+    <title>Introduction | King's Cross from below</title>
+    <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-    <nav>
-        <a href="../../index.html">← Back to Contents</a>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">King's Cross from below</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="introduction.html" class="active">Introduction</a></li>
+                <li><a href="part1.html">Part 1: Regime Change</a></li>
+                <li><a href="part2.html">Part 2: Tectonic Shifts</a></li>
+                <li><a href="part3.html">Part 3: Victory of New Economy</a></li>
+                <li><a href="contributors.html">Contributors</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header>
-        <p class="chapter-number">Chapter 0</p>
-        <h1>Introduction</h1>
-        <p class="author">By Michael Edwards and Jason Katz</p>
-    </header>
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <!-- Collapsible Book Introduction -->
+        <div class="book-intro-container">
+            <button class="book-intro-toggle" id="bookIntroToggle">
+                <span class="toggle-text">About this book</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="book-intro-content" id="bookIntroContent">
+                <h2>King's Cross from below</h2>
+                <p>King's Cross from below is an open-access book published by UCL Press (2026), co-edited by Michael Edwards and Jason Katz, and produced with 36 contributors. This website serves as its living companion: an indexed archive of planning documents, oral histories, and collaborative knowledge produced through four decades of resistance and redevelopment in King's Cross and extending forward into the ongoing campaigns which emerged from this work. Each page on this site corresponds to a contribution in the book and carries a permanent URL for linking. The site is to be archived by the British Library, ensuring long-term accessibility for researchers, residents, activists, and anyone engaged with questions of urban development, community organizing, and planning from below. This is not a closed repository. Contributors and readers are invited to submit materials, reflections, and documents that extend the conversations begun in these pages. The infrastructure here is designed to remain open to encounter - to support ongoing campaigns, and to make visible the genealogical chains of planning decisions that continue to shape London's communities.</p>
+                
+                <p><strong>How to cite pages from this site:</strong> Author Name(s). "Page Title." In <em>King's Cross from below</em>, edited by Michael Edwards and Jason Katz. Companion website. [Permanent URL]. Accessed [Date].</p>
+            </div>
+        </div>
 
-    <article>
-        <p>[Introduction content to be added]</p>
-    </article>
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Introduction</h1>
+            <p class="page-subtitle">Michael Edwards & Jason Katz</p>
+        </div>
 
-    <aside class="citation-info">
-        <h3>How to Cite This Chapter</h3>
-        <p><strong>Suggested citation:</strong> Edwards, Michael, and Jason Katz. "Introduction." In <em>King's Cross from Below</em>, edited by Michael Edwards and Jason Katz. London: UCL Press, 2026.</p>
-        <p><strong>Permanent URL:</strong> <a href="https://kingscrossfrombelow.github.io/_chapters/000-front/introduction.html">https://kingscrossfrombelow.github.io/_chapters/000-front/introduction.html</a></p>
-    </aside>
+        <!-- Article Content -->
+        <article class="chapter-content">
+            <p><em>This page is for the introduction text, additional material, links and discussion.</em></p>
+            
+            <h2>Documents cited in the book</h2>
+            <ul>
+                <li><a href="#">Document A - Planning proposal 1987</a></li>
+                <li><a href="#">Document B - Community response brief</a></li>
+                <li><a href="#">Document C - Railway Lands Group manifesto</a></li>
+            </ul>
 
-    <footer>
-        <p>&copy; 2026 UCL Press. Licensed under Creative Commons.</p>
-        <p><a href="https://github.com/kingscrossfrombelow/kingscrossfrombelow.github.io">View on GitHub</a></p>
+            <h2>Links to related resources</h2>
+            <ul>
+                <li><a href="https://www.kingscross.co.uk">King's Cross official website</a></li>
+                <li><a href="#">Railway Lands Group archive</a></li>
+                <li><a href="#">Camden Council planning documents</a></li>
+            </ul>
+
+            <h2>Photo Gallery</h2>
+            <div class="photo-gallery-placeholder">
+                <p>Photo gallery will be added here</p>
+            </div>
+        </article>
+
+        <!-- Graph View Sidebar -->
+        <aside class="graph-view">
+            <h3>Connections</h3>
+            <div class="graph-container" id="graphContainer">
+                <p class="graph-placeholder">Interactive graph view of chapter connections will appear here</p>
+            </div>
+            <div class="graph-legend">
+                <p><small>This graph shows all hyperlinks and connections mentioned in this chapter</small></p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Edit on GitHub Button -->
+    <footer class="page-footer">
+        <a href="https://github.com/kingscrossfrombelow/kingscrossfrombelow.github.io/edit/main/introduction.md" class="edit-button" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"/>
+            </svg>
+            Edit this page on GitHub
+        </a>
     </footer>
+
+    <script src="../../scripts.js"></script>
 </body>
 </html>
