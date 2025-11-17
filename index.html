@@ -7,22 +7,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>King's Cross from Below</h1>
-        <p class="subtitle">40 years of community organizing around King's Cross development</p>
-        <p class="editors">Edited by Michael Edwards and Jason Katz</p>
-        <p class="publisher">UCL Press, 2026</p>
-    </header>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">King's Cross from below</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="_chapters/000-front/introduction.html">Introduction</a></li>
+                <li><a href="_chapters/part1.html">Part 1: Regime Change</a></li>
+                <li><a href="_chapters/part2.html">Part 2: Tectonic Shifts</a></li>
+                <li><a href="_chapters/part3.html">Part 3: Victory of New Economy</a></li>
+                <li><a href="_chapters/000-front/contributor-biographies.html">Contributors</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <main>
-        <section class="intro">
-            <p>This website serves as a living archive for "King's Cross from Below," an open-access academic book documenting four decades of community organizing around the redevelopment of King's Cross in London.</p>
-            <p>The book brings together 36 contributors—activists, residents, planners, and scholars—to tell the story of how communities engaged with, resisted, and shaped one of London's most significant urban transformations.</p>
-        </section>
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <!-- Collapsible Book Introduction -->
+        <div class="book-intro-container">
+            <button class="book-intro-toggle" id="bookIntroToggle">
+                <span class="toggle-text">About this book</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="book-intro-content" id="bookIntroContent">
+                <h2>King's Cross from below</h2>
+                <p>King's Cross from below is an open-access book published by UCL Press (2026), co-edited by Michael Edwards and Jason Katz, and produced with 36 contributors. This website serves as its living companion: an indexed archive of planning documents, oral histories, and collaborative knowledge produced through four decades of resistance and redevelopment in King's Cross and extending forward into the ongoing campaigns which emerged from this work. Each page on this site corresponds to a contribution in the book and carries a permanent URL for linking. The site is to be archived by the British Library, ensuring long-term accessibility for researchers, residents, activists, and anyone engaged with questions of urban development, community organizing, and planning from below. This is not a closed repository. Contributors and readers are invited to submit materials, reflections, and documents that extend the conversations begun in these pages. The infrastructure here is designed to remain open to encounter - to support ongoing campaigns, and to make visible the genealogical chains of planning decisions that continue to shape London's communities.</p>
+                
+                <p><strong>How to cite pages from this site:</strong> Author Name(s). "Page Title." In <em>King's Cross from below</em>, edited by Michael Edwards and Jason Katz. Companion website. [Permanent URL]. Accessed [Date].</p>
+            </div>
+        </div>
 
-        <section class="toc">
-            <h2>Table of Contents</h2>
-            
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Table of Contents</h1>
+            <p class="page-subtitle">40 years of community organizing around King's Cross development</p>
+        </div>
+
+        <!-- Table of Contents -->
+        <article class="chapter-content">
             <div class="toc-section front-matter">
                 <h3>Front Matter</h3>
                 <ul>
@@ -117,18 +140,27 @@
                     <li><strong>16. 'Popular Planning' as Collective Infrastructure</strong> — Richard Wolff, Zürich</li>
                 </ul>
             </div>
-        </section>
+        </article>
 
-        <section class="about">
-            <h2>About This Book</h2>
-            <p>This open-access book is published by UCL Press and will be preserved as part of the British Library's digital archive. Each chapter has a permanent URL for citation purposes.</p>
-            <p>The website provides an accessible, archival-quality format designed for both online reading and printing.</p>
-        </section>
+        <!-- Sidebar for connections/graph (optional on homepage) -->
+        <aside class="sidebar">
+            <div class="connections-panel">
+                <h3>Site Navigation</h3>
+                <p>Use the navigation bar above to explore different sections of the book, or browse the complete table of contents on this page.</p>
+            </div>
+        </aside>
     </main>
 
-    <footer>
-        <p>&copy; 2026 UCL Press. Licensed under Creative Commons.</p>
-        <p><a href="https://github.com/kingscrossfrombelow/kingscrossfrombelow.github.io">View on GitHub</a></p>
+    <!-- Edit on GitHub Button -->
+    <footer class="page-footer">
+        <a href="https://github.com/kingscrossfrombelow/kxfb-test/edit/main/index.html" class="edit-button" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"/>
+            </svg>
+            Edit this page on GitHub
+        </a>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
